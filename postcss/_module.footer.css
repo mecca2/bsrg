@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	# Footer
+\* ------------------------------------------------------------ */
+
+.footer {}
+.footer .footer__inner { padding: 70px 0 71px; background: $c-dark-blue; color: #b8c9d6; font-size: 13px; }
+.footer .footer__bar { padding: 27px 0; background: #0b1422; color: #4e5d74; }
+.footer .footer__bar .shell { display: flex; justify-content: space-between; align-items: center; }
+.footer .footer__bar .shell:after { display: none; }
+.footer .footer__bar .socials { color: #fff; font-size: 16px; }
+
+.footer .footer__copyright { font-size: 11px; }
+.footer .footer__copyright p { margin-bottom: 0; display: inline-block; }
+.footer .footer__copyright p a { color: #fff; text-decoration: none; }
+.footer .footer__copyright p + p { margin-left: 24px; }
+
+.footer .widget_nav_menu a { position: relative; display: inline-block; }
+.footer .widget_nav_menu a:after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #fff; transition: width .3s; }
+
+html .footer .gform_wrapper.gform_validation_error .gform_body { margin-bottom: 40px !important; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.footer { text-align: center; }
+	.footer .footer__inner { padding: 20px 0; }
+
+	.footer .footer__bar { padding: 20px 0; }
+	.footer .footer__bar .shell { display: block; }
+
+	.footer .footer__copyright { margin-bottom: 10px; }
+	.footer .footer__copyright p + p { margin-left: 0; }
+}

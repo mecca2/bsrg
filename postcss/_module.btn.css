@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------ *\
+	# Button
+\* ------------------------------------------------------------ */
+
+[class^="btn"] { display: inline-block; vertical-align: middle; text-align: center; cursor: pointer; text-decoration: none; transition: opacity .3s; }
+[class^="btn"] {
+	-webkit-appearance: none;
+	 		appearance: none;
+}
+
+.btn { min-width: 197px; height: 45px; padding: 0 10px; line-height: 43px; text-align: center; border-radius: 5px; font-size: 14px; border: 1px solid transparent; background: $c-light-blue; color: #fff; transition: all .3s; }
+
+/* ------------------------------------------------------------ *\ 
+	- Block
+\* ------------------------------------------------------------ */
+	
+.btn-block { display: block; padding-left: 0; padding-right: 0; }
+
+/* ------------------------------------------------------------ *\
+	- Play
+\* ------------------------------------------------------------ */
+
+.btn-play { position: relative; width: 110px; height: 110px; border: 5px solid #fff; border-radius: 100%; }
+.btn-play i { @extend center; margin-left: 5px; font-size: 53px; }
+
+/* ------------------------------------------------------------ *\ 
+	- Menu
+\* ------------------------------------------------------------ */
+
+.btn-menu { display: none; width: 32px; height: 32px; position: relative; z-index: 5; }
+.btn-menu *,
+.btn-menu *:before,
+.btn-menu *:after { transition: background $t-duration, margin $t-duration, transform $t-duration; }
+.btn-menu span,
+.btn-menu span:before,
+.btn-menu span:after { content: ' '; position: absolute; left: 0; right: 0; top: 50%; margin-top: -1px; height: 2px; background-color: $c-black; }
+.btn-menu span:before { margin-top: -7px; }
+.btn-menu span:after { margin-top: 5px; }
+
+body.home .btn-menu span,
+body.home .btn-menu span:before,
+body.home .btn-menu span:after { background-color: #fff; }
+
+body.home.show-nav-main .btn-menu span { background: transparent; }
+
+body.home.show-nav-main .btn-menu span:before,
+body.home.show-nav-main .btn-menu span:after { background-color: $c-dark-blue; }
+
+body.show-nav-main .btn-menu span { background-color: transparent; }
+body.show-nav-main .btn-menu span:before,
+body.show-nav-main .btn-menu span:after { margin-top: -1px; background-color: $c-dark-blue; }
+body.show-nav-main .btn-menu span:before { transform: rotate(45deg); }
+body.show-nav-main .btn-menu span:after { transform: rotate(-45deg); }
+
+/* Mobile */
+
+$breakpoint-tablet-portrait {
+	.btn-menu { display: block; }
+
+	.btn-play { width: 80px; height: 80px; }
+	.btn-play i { font-size: 30px; }
+}

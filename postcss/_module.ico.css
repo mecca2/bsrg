@@ -1,0 +1,8 @@
+/* ------------------------------------------------------------ *\ 
+	# Icons
+\* ------------------------------------------------------------ */
+
+[class^="ico-"] { font-size: 0; line-height: 0; text-indent: -4004px; display: inline-block; vertical-align: top; position: relative; background-size: cover; }
+
+.ico-arrow-left { background-image: url(images/arrow-left.png); width: 25px; height: 78px; }
+.ico-arrow-right { background-image: url(images/arrow-right.png); width: 25px; height: 78px; }

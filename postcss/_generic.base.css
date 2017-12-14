@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	min-width: 320px;
+	background: $c-white;
+	font-family: $f-opensans;
+	font-weight: $font-weight-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	font-weight: $font-weight-base;
+	color: $c-black;
+}
+
+a { color: inherit; text-decoration: underline; }
+a:hover { text-decoration: none; }
+
+a[href^="tel"] { text-decoration: none; cursor: pointer; }
+a[href^="tel"]:hover { text-decoration: underline; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-bottom: calc($(line-height-base)em / 2); }
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 26px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 13px; }
+
+p,
+ul,
+ol,
+dl,
+hr,
+table,
+blockquote { margin-bottom: $(line-height-base)em; }
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child { margin-bottom: 0; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	body { font-size: 14px; }
+}
+
+.background-image { display: block; width: 100%; padding-bottom: 66.66576564400595%; background-size: cover; background-repeat: no-repeat; background-position: center top; }

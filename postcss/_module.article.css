@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Article Details
+\* ------------------------------------------------------------ */
+
+.article-details { position: relative; word-break: break-all; }
+.article-details h4 { margin-bottom: 15px; line-height: 1; }
+.article-details .google-map { float: right; height: 180px; width: 238px; margin: 0 0 10px 10px; }
+.article-details h5 { font-size: 20px; }
+.article-details > h6 { font-size: 13px; text-transform: uppercase; }
+.article-details > p { margin-bottom: 46px; font-size: 15px; color: #656565; }
+.article-details > ul { margin-bottom: 77px; list-style-type: none; }
+.article-details > ul:after { @extend clearfix; }
+.article-details > ul li { position: relative; float: left; width: 33.33%; padding-left: 20px; padding-right: 10px; font-size: 15px; color: #656565; }
+.article-details > ul li:before { content: ''; position: absolute; left: 0; top: 12px; width: 5px; height: 5px; margin-top: -2px; border-radius: 100%; background: $c-black; }
+.article-details .list-details { float: left; width: calc(100% - 248px); margin-bottom: 26px }
+.article-details .list-details p { font-size: 13px; font-weight: 600; color: $c-black; }
+.article-details .list-info { margin-bottom: 21px; }
+
+.article-details ul.property-details { column-count: 2; column-gap: 50px; }
+.article-details ul.property-details li { overflow: hidden; width: 100%; padding-left: 0; margin-bottom: 5px; float: none; }
+.article-details ul.property-details li h6 { font-size: 15px; }
+.article-details ul.property-details li:before { display: none; }
+
+/* Tablet Portrait */
+
+$breakpoint-mobile {
+	.article-details > ul li { float: none; width: 100%; }
+	.article-details h5 {  }
+	.article-details .google-map { float: none; margin: 0 auto 20px; }
+	.article-details .list-details { float: none; width: auto; }
+}
+
+/* ------------------------------------------------------------ *\
+	Articles Loop
+\* ------------------------------------------------------------ */
+
+.articles { list-style: none; }
+.articles .article { margin-bottom: 26px; }
+.section-main .page__title { font-size: 35px; margin-bottom: 26px; }

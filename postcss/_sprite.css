@@ -1,0 +1,22 @@
+.ico-bath { background: url(../images/sprite/ico-bath.png) no-repeat 0 0; width: 17px; height: 16px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-bed { background: url(../images/sprite/ico-bed.png) no-repeat 0 0; width: 19px; height: 14px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-full-screen { background: url(../images/sprite/ico-full-screen.png) no-repeat 0 0; width: 41px; height: 41px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-house { background: url(../images/sprite/ico-house.png) no-repeat 0 0; width: 64px; height: 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-lamp { background: url(../images/sprite/ico-lamp.png) no-repeat 0 0; width: 43px; height: 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-pin { background: url(../images/sprite/ico-pin.png) no-repeat 0 0; width: 56px; height: 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+.icon-deal { background: url(../images/sprite/icon-deal.png) no-repeat 0 0; width: 79px; height: 67px; display: inline-block; vertical-align: middle; font-size: 0; }
+.icon-gates { background: url(../images/sprite/icon-gates.png) no-repeat 0 0; width: 80px; height: 50px; display: inline-block; vertical-align: middle; font-size: 0; }
+.icon-home { background: url(../images/sprite/icon-home.png) no-repeat 0 0; width: 73px; height: 73px; display: inline-block; vertical-align: middle; font-size: 0; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.ico-bath { background: url(../images/sprite/ico-bath@2x.png) no-repeat 0 0; width: 17px; height: 16px; background-size: 17px 16px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.ico-bed { background: url(../images/sprite/ico-bed@2x.png) no-repeat 0 0; width: 19px; height: 14px; background-size: 19px 14px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.ico-full-screen { background: url(../images/sprite/ico-full-screen@2x.png) no-repeat 0 0; width: 41px; height: 41px; background-size: 41px 41px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.ico-house { background: url(../images/sprite/ico-house@2x.png) no-repeat 0 0; width: 64px; height: 60px; background-size: 64px 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.ico-lamp { background: url(../images/sprite/ico-lamp@2x.png) no-repeat 0 0; width: 43px; height: 60px; background-size: 43px 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.ico-pin { background: url(../images/sprite/ico-pin@2x.png) no-repeat 0 0; width: 56px; height: 60px; background-size: 56px 60px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.icon-deal { background: url(../images/sprite/icon-deal@2x.png) no-repeat 0 0; width: 79px; height: 67px; background-size: 79px 67px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.icon-gates { background: url(../images/sprite/icon-gates@2x.png) no-repeat 0 0; width: 80px; height: 50px; background-size: 80px 50px; display: inline-block; vertical-align: middle; font-size: 0; }
+	.icon-home { background: url(../images/sprite/icon-home@2x.png) no-repeat 0 0; width: 73px; height: 73px; background-size: 73px 73px; display: inline-block; vertical-align: middle; font-size: 0; }
+}
+

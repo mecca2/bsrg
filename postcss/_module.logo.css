@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	# Logos
+\* ------------------------------------------------------------ */
+
+[class^="logo"] { font-size: 0; line-height: 0; text-indent: -4004px; position: relative; display: inline-block; vertical-align: middle; text-decoration: none; }
+[class^="logo"] > img { display: block; width: 100%; }
+
+.logo { background-image: url(images/logo.png); background-size: cover; width: 164px; height: 82px; }
+
+body.home .logo { background-image: url(images/logo-white@2x.png); width: 328px; height: 164px; background-size: cover; }
+
+/*  Retina Logo  */
+$retina {
+	.logo { background-image: url(images/logo@2x.png); background-size: 164px 82px; }
+	body.home .logo { background-image: url(images/logo-white@2x.png); width: 328px; height: 164px; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	body.home .logo { background-image: url(images/logo-white@2x.png); width: 164px; height: 82px; background-size: cover; }
+}

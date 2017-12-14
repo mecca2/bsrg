@@ -1,0 +1,9 @@
+/* ------------------------------------------------------------ *\
+	Socials
+\* ------------------------------------------------------------ */
+
+.socials ul { list-style-type: none;  }
+.socials ul:after { @extend clearfix; }
+.socials ul li { float: left; }
+.socials ul li + li { margin-left: 19px; }
+.socials ul li i { font-size: 15px; transition: color .3s; }

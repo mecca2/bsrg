@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	Profile
+\* ------------------------------------------------------------ */
+
+.profile .profile__head { margin-bottom: 35px; }
+.profile .profile__head:after { @extend clearfix; }
+.profile .profile__head img { margin-right: 32px; margin-top: 0; margin-bottom: 0; }
+.profile .profile__head h4 { margin-top: 3px; margin-bottom: 8px; line-height: 1.1; }
+.profile .profile__head p { font-size: 13px; color: #a5a5a5; letter-spacing: -0.05em; }
+.profile .profile__head a { display: block; margin-bottom: 4px; font-size: 15px; font-weight: 600; color: #2991e2; text-decoration: none; }
+.profile .profile__head a i { margin-right: 8px; }
+.profile .profile__body h5 { font-size: 16px; }
+.profile .profile__body > p { color: #656565; font-size: 15px; }
+.profile .profile__body .socials { margin-bottom: 70px; }
+.profile .profile__body .socials li + li { margin-left: 8px; }
+.profile .profile__body .socials li a { display: block; width: 40px; height: 40px; border: 1px solid #eaeaea; line-height: 38px; text-align: center; font-size: 13px; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.profile .profile__head img { float: none; display: block; margin: 0 auto 15px; }
+	.profile .profile__head h4 { text-align: center; }
+}

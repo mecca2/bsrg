@@ -1,0 +1,104 @@
+/* ------------------------------------------------------------ *\
+	# Navigations
+\* ------------------------------------------------------------ */
+
+.nav-links > ul,
+.nav-filter > ul,
+.nav-breadcrumbs > ul,
+.nav > ul { list-style: none; font-size: 0; line-height: 0; }
+
+.nav-links > ul > li,
+.nav-filter > ul > li,
+.nav-breadcrumbs > ul > li,
+.nav > ul > li { display: inline-block; vertical-align: top; position: relative; }
+
+.nav-links > ul a,
+.nav-filter > ul a,
+.nav-breadcrumbs > ul a,
+.nav > ul a { display: block; text-decoration: none; }
+
+/* ------------------------------------------------------------ *\
+	Nav Main
+\* ------------------------------------------------------------ */
+
+.nav > ul { padding-top: 10px; }
+.nav > ul > li { position: relative; padding-bottom: 10px; font-size: 15px; line-height: 1; font-weight: 700; color: $c-blue-text; }
+.nav > ul > li > a { position: relative; }
+.nav > ul > li > a:after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: $c-dark-blue; transition: width .3s; }
+.nav > ul > li + li { margin-left: 26px; }
+
+.nav > ul > li.current-menu-item > a:after { width: 100%; }
+
+/*  Dropdown  */
+.nav > ul > li > ul { position: absolute; z-index: 20; top: 100%; left: -10px; width: 200px; padding: 15px 10px; background: #fff; font-size: 13px; opacity: 0; visibility: hidden; margin-top: 30px;  transition: all .3s; }
+.nav > ul > li > ul li + li { margin-top: 8px; }
+
+body.home .nav > ul > li { color: #fff; }
+body.home .nav > ul > li > a:after { background: #fff; }
+body.home .nav > ul > li > ul { color: $c-dark-blue; }
+
+/* Tablet Portrait */
+ 
+ $breakpoint-tablet-portrait {
+	.nav { position: absolute; z-index: 4; left: 0; top: 0; width: 100%; padding: 20px; pointer-events: none; will-change: transform; transform: translateX(-100%); transition: transform .3s; background-color: #fff; }
+
+	body.show-nav-main .nav { pointer-events: all; transform: translateX(0); }
+
+	.nav > ul > li { display: block; }
+	.nav > ul > li + li { margin-left: 0; margin-top: 15px; }
+	.nav > ul > li > ul { display: none; position: static; width: 100%; margin-top: 0; visibility: visible; opacity: 1; transition: none; }
+
+	body.home .nav > ul > li { color: $c-dark-blue; }
+}
+
+/* ------------------------------------------------------------ *\
+	Nav Breadcrumbs
+\* ------------------------------------------------------------ */
+
+.nav-breadcrumbs > ul > li { position: relative; font-size: 12px; font-weight: 600; }
+.nav-breadcrumbs > ul > li + li { padding-left: 13px; margin-left: 10px; }
+.nav-breadcrumbs > ul > li + li:before { content: ''; position: absolute; left: -3px; top: -2px; width: 5px; height: 5px; border-top: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5; transform: rotate(45deg); }
+.nav-breadcrumbs > ul > li a { color: #a5a5a5; }
+.nav-breadcrumbs > ul > li:first-child a { color: $c-light-blue; }
+
+/* ------------------------------------------------------------ *\
+	Nav Filter
+\* ------------------------------------------------------------ */
+
+.nav-filter { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.nav-filter > ul { margin-bottom: 0; font-size: 17px; line-height: 1; }
+.nav-filter > ul > li { position: relative; }
+.nav-filter > ul > li + li { margin-left: 19px; }
+.nav-filter > ul > li > a { position: relative; padding-bottom: 8px; color: $c-black; font-weight: 700; }
+.nav-filter > ul > li.current a { color: $c-light-blue; }
+.nav-filter > ul > li.current a:after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: $c-light-blue; }
+.nav-filter > ul > li i { margin-left: 10px; }
+
+.nav-filter p { font-size: 13px; font-weight: 600; color: $c-black; }
+
+/*  Nav Dropdown  */
+.nav-filter ul ul { position: absolute; z-index: 2; top: 100%; left: -10px; width: calc(100% + 20px); padding: 10px; background: #fff; font-size: 15px; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .3s, visibility .3s; }
+.nav-filter ul ul li + li { margin-top: 10px; }
+.nav-filter ul ul li a { transition: color .3s; }
+.nav-filter ul ul li a:hover { color: $c-light-blue; }
+
+.nav-filter > ul > li:hover ul { opacity: 1; visibility: visible; pointer-events: all; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.nav-filter { display: block; text-align: center; }
+	.nav-filter > ul { margin-bottom: 15px; }
+	.nav-filter ul ul { text-align: left; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.nav-filter > ul { font-size: 14px; }
+}
+
+@media (max-width: 374px) {
+	.nav-filter > ul { font-size: 12px; }
+	.nav-filter > ul li + li { margin-left: 10px; }
+}

@@ -1,0 +1,148 @@
+/* ------------------------------------------------------------ *\
+	# Lists
+\* ------------------------------------------------------------ */
+
+[class^="list"] > ul { list-style: none; position: relative; }
+
+/* ------------------------------------------------------------ *\
+	- Features
+\* ------------------------------------------------------------ */
+
+.list-features ul { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 -20px; }
+.list-features ul li { flex: 0 0 33.33%; max-width: 33.33%; padding: 0 20px; margin-bottom: 20px; }
+.list-features ul li h4 { margin-bottom: 22px; font-size: 22px; color: #201e1e; }
+.list-features ul li i { display: inline-block; vertical-align: middle; margin-right: 11px; }
+.list-features ul li p { font-size: 18px; font-weight: 700; opacity: .7; color: #000; line-height: 1.9; }
+.list-features .ico-custom { width: 64px; height: 60px; display: inline-block; vertical-align: middle; background-position: center center; background-size: contain; background-repeat: no-repeat; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.list-features ul li { text-align: center; }
+	.list-features ul li h4 { font-size: 18px; }
+	.list-features ul li i { display: block; margin: 0 auto;  }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.list-features ul { display: block; margin: 0; }
+	.list-features ul li { max-width: 100%; padding: 0; }
+	.list-features ul li + li { margin-top: 25px; }
+	.list-features ul li p { font-size: 14px; }
+	.list-features ul li h4 { margin-bottom: 10px; }
+}
+
+/* ------------------------------------------------------------ *\
+	- Details
+\* ------------------------------------------------------------ */
+
+.list-details .ico-bed { background: url(images/bed.svg); width: 19px; height: 14px; background-size: cover; background-position: center center; }
+.list-details .ico-bath { background: url(images/bath.svg); width: 19px; height: 14px; background-size: cover; background-position: center center; }
+.list-details ul { list-style-type: none; }
+.list-details ul:after { @extend clearfix; }
+.list-details ul li { float: left; display: flex; align-items: center; }
+.list-details ul li + li { margin-left: 18px; }
+.list-details ul li i { margin-right: 6px; }
+.list-details ul li p { font-size: 13px; font-weight: 600; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.list-details ul li p { font-size: 11px; }
+	.list-details ul li + li { margin-left: 15px; }
+}
+
+/* ------------------------------------------------------------ *\
+	List Info
+\* ------------------------------------------------------------ */
+
+.list-info { display: flex; margin: 0 -15px; }
+.list-info ul { flex: 0 0 33.33%; max-width: 33.33%; padding: 0 15px; list-style-type: none; }
+.list-info i { display: inline-block; vertical-align: middle; margin-right: 5px; color: $c-light-blue; }
+.list-info h6 { display: inline-block; vertical-align: middle; margin-bottom: 0; font-size: 15px; font-weight: 600; }
+.list-info ul li { padding-bottom: 19px; }
+.list-info ul li:nth-child(2) ~ li { padding-top: 20px; border-top: 1px solid #eaeaea; }
+.list-info ul li p { margin-bottom: 0; font-weight: 600; font-size: 12px; color: #a5a5a5; }
+.list-info ul li h5 { font-size: 15px; font-weight: 600; color: #656565; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.list-info i { display: block; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.list-info { display: block; }
+	.list-info ul { max-width: 100%; }
+}
+
+/* ------------------------------------------------------------ *\
+	List Listings
+\* ------------------------------------------------------------ */
+
+.list-listings > h4 { margin-bottom: 25px; font-size: 20px; }
+.list-listings > ul > li:after { @extend clearfix; }
+.list-listings > ul > li > a { display: flex; position: relative; border: 1px solid #eaeaea; text-decoration: none; transition: box-shadow .3s; }
+.list-listings > ul > li > a:after { content: ''; position: absolute; top: 0; right: 0; height: 100%; width: 30px; background: #f7f7f7; }
+.list-listings > ul > li > a:before { content: ''; position: absolute; z-index: 2; right: 12px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-top: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5; transform: rotate(45deg); }
+.list-listings > ul > li + li { margin-top: 28px; }
+.list-listings > ul > li img { height: 100%; width: 310px; margin: 0 24px 0 0; }
+.list-listings > ul > li .list__content { flex-grow: 1; padding-right: 40px; }
+.list-listings > ul > li .list__content h3 { margin-top: 19px; margin-bottom: 8px; color: $c-blue-text; }
+.list-listings > ul > li .list__content p { margin-bottom: 0; font-size: 15px; font-weight: 700; color: #2c2c2c; }
+.list-listings > ul > li .list__content p strong { display: block; margin-bottom: 13px; font-size: 13px; color: #8e969c; font-weight: 400; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.list-listings { margin-right: calc(-50% - 30px); }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.list-listings { margin-right: 0; }
+	.list-listings > ul > li > a { display: block; padding-bottom: 50px; }
+	.list-listings > ul > li img { width: 100%; margin: 0 0 10px 0; }
+	.list-listings > ul > li .list__content { padding: 0 15px; }
+	.list-listings > ul > li > a:after { top: auto; bottom: 0; left: 0; width: 100%; height: 30px; }
+	.list-listings > ul > li > a:before { right: auto; left: 50%; margin-top: 0; margin-left: -5px; top: auto; bottom: 10px; transform: rotate(135deg); }
+}
+
+/* ------------------------------------------------------------ *\
+	List Services
+\* ------------------------------------------------------------ */
+
+.list-services { padding: 100px 0 50px; }
+.list-services ul { display: flex; justify-content: space-between; margin: -17px; list-style-type: none; }
+.list-services li { flex: 0 0 33.33%; max-width: 33.33%; padding: 17px; color: #fff; text-align: center; }
+
+.list-services .list__content { position: relative; height: 100%; padding: 72px 13px 75px; background-color: $c-dark-blue; }
+.list-services .list__content h2 { margin-bottom: 7px; font-size: 40px; }
+.list-services .list__content p { margin-bottom: 27px; opacity: .7; font-size: 18px; line-height: 1.95; font-weight: 700; }
+.list-services .list__content .btn { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
+
+.list-services .list__image { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 130px; height: 130px; margin: 0 auto; border: 3px solid #000; overflow: hidden; border-radius: 100%; background: #fff; text-align: center; line-height: 123px; }
+.list-services .list__image img { display: block; width: 100%; }
+.list-services .list__image i { background-size: contain; background-repeat: no-repeat; background-position: center center; width: 73px; height: 73px; display: inline-block; vertical-align: middle; font-size: 0; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.list-services .list__content h2 { font-size: 30px; }
+	.list-services .list__content p { font-size: 14px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.list-services ul { display: block; }
+	.list-services li { max-width: 100%; }
+	.list-services li + li { margin-top: 50px; }
+	.list-services .list__content h2 { font-size: 24px; }
+	.list-services .list__image { width: 110px; height: 110px; line-height: 104px; }
+	.list-services .list__image i { transform: scale(.8); }
+}

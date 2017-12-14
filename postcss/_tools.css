@@ -1,0 +1,6 @@
+@define-placeholder clearfix { content: ''; line-height: 0; display: table; clear: both; }
+@define-placeholder center { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+@define-placeholder full { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+@define-placeholder imageCover { background-size: cover; background-position: center center; background-repeat: no-repeat; }
+@define-placeholder imageContain { background-size: contain; background-position: center center; background-repeat: no-repeat; }
+@define-placeholder gradient { background: linear-gradient(to bottom, transparent, rgba(1,1,1,.6)); }

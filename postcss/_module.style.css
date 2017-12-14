@@ -1,0 +1,108 @@
+/* ------------------------------------------------------------ *\
+	# Global Styles
+\* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ *\
+	- Transitions
+\* ------------------------------------------------------------ */
+
+a,
+button,
+input[type="submit"],
+input[type="button"] { transition: color $t-duration, background $t-duration, opacity $t-duration, transform $t-duration; }
+
+/* ------------------------------------------------------------ *\
+	- Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { background-color: $c-white; overflow: hidden; }
+body.home .wrapper { padding-top: 50px; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	body.home .wrapper { padding-top: 62px;  }
+}
+
+/* ------------------------------------------------------------ *\
+	Content
+\* ------------------------------------------------------------ */
+
+.content { width: 68.3%; }
+
+.content:only-child { width: 100%; }
+.content.content--left { float: left; padding-right: 30px; }
+.content.content--left + .sidebar { float: right; }
+
+.content.content--right { float: right; padding-left: 30px; }
+.content.content--right + .sidebar { float: left; }
+
+/* ------------------------------------------------------------ *\
+	Sidebar
+\* ------------------------------------------------------------ */
+
+.sidebar { width: 31.7%; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.sidebar,
+	.content { float: none !important; width: 100%; padding: 0 !important; margin: 0 !important; }
+
+	.content { margin-bottom: 20px !important; }
+}
+
+/* ------------------------------------------------------------ *\
+	Agent Business Card
+\* ------------------------------------------------------------ */
+
+.agent-business-card .widget__body:after { @extend clearfix; }
+.agent-business-card .widget__body h5 { padding-top: 5px; margin-bottom: 0; font-size: 16px; }
+.agent-business-card .widget__body p { margin-bottom: 5px; font-size: 12px; font-weight: 600; color: #a5a5a5; }
+.agent-business-card .widget__body a { font-size: 14px; color: $c-light-blue; }
+
+/* ------------------------------------------------------------ *\
+	Selectric
+\* ------------------------------------------------------------ */
+
+.selectric { padding: 12px 0; border-radius: 5px; border-color: #e8e8e8; background: transparent; }
+.selectric .button { display: none; }
+.selectric .label { white-space: normal; overflow: visible; height: auto; margin-left: 20px; font-size: 13px; color: #a0a0a0; line-height: 1.3; }
+.selectric-items { border-radius: 5px; border-bottom-width: 2px; }
+.selectric-items .selectric-scroll ul li + li { margin-top: 0; }
+
+/* ------------------------------------------------------------ *\
+	Mfp Full Width
+\* ------------------------------------------------------------ */
+
+.mfp-full-width .mfp-container,
+.mfp-full-width .mfp-content,
+.mfp-full-width .mfp-figure,
+.mfp-full-width .mfp-content figure,
+.mfp-full-width .mfp-content figure img { height: 100%; width: 100%; padding: 0; }
+
+.mfp-full-width .mfp-close { right: 20px; top: 20px; font-size: 50px; }
+
+body.admin-bar .mfp-wrap { top: 32px !important; }
+body.admin-bar .mfp-full-width .mfp-container { height: calc(100% - 32px); }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	body.admin-bar .mfp-wrap { top: 46px !important; }
+	body.admin-bar .mfp-full-width .mfp-container { height: calc(100% - 46px); }
+}
+
+/* ------------------------------------------------------------ *\
+	Autocomplete
+\* ------------------------------------------------------------ */
+
+.ui-autocomplete { text-align: left; font-family: inherit; font-size: 14px; }
+.ui-autocomplete li { padding: 0 25px; }
+.ui-autocomplete li.ui-state-focus { color: #fff; background: #3d91ff; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.ui-autocomplete li { padding: 10px; font-size: 11px; }
+}

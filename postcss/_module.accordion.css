@@ -1,0 +1,20 @@
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+
+.accordion .accordion__section { margin-bottom: 10px; }
+
+.accordion .accordion__head { display: flex; justify-content: space-between; align-items: center; padding: 14px 25px; border: 1px solid #e2e2e2; border-radius: 5px; color: $c-blue-text; text-decoration: none; transition: all .3s; letter-spacing: 0.026em; }
+.accordion .accordion__head h6 { margin-bottom: 0; }
+.accordion .accordion__head span { position: relative; width: 12px; height: 12px; }
+.accordion .accordion__head span:before { content: ''; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: #000; transition: transform .3s, opacity .4s, color .3s; }
+.accordion .accordion__head span:after { content: ''; position: absolute; left: 0; width: 100%; top: 50%; height: 1px; background: #000; }
+
+.accordion .accordion__body { padding: 0 26px; opacity: 0; visibility: hidden; max-height: 0; transition: padding .3s, visibility .3s, height .3s, opacity .3s; }
+.accordion .accordion__body p { font-size: 15px; color: #656565; line-height: 1.67; }
+
+/*  Active State  */
+.accordion .accordion__section.active .accordion__head { background: $c-light-blue; color: #fff; }
+.accordion .accordion__section.active .accordion__head span:before { transform: rotate(90deg); opacity: 0; background: #fff; }
+.accordion .accordion__section.active .accordion__head span:after { background: #fff; }
+.accordion .accordion__section.active .accordion__body { padding-top: 18px; padding-bottom: 20px; visibility: visible; opacity: 1; max-height: 100%; }

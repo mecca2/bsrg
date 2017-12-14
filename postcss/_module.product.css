@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	Products
+\* ------------------------------------------------------------ */
+
+.products { display: flex; flex-wrap: wrap; margin: 0 -15px; }
+.products--1of2 .product { flex: 0 0 50%; max-width: 50%; }
+.products--1of2 .product .background-image { padding-bottom: 70.270%; }
+.products--1of3 .product { flex: 0 0 33.33%; max-width: 33.33%; }
+
+/* ------------------------------------------------------------ *\
+	Product
+\* ------------------------------------------------------------ */
+
+.product { display: flex; flex-direction: column; padding: 0 15px; margin-bottom: 30px; }
+.product .product__image { position: relative; }
+.product .product__image a { display: block; text-decoration: none; }
+.product .product__image img { width: 100%; height: 100%; }
+.product .product__image span { position: absolute; top: 15px; left: 15px; height: 16px; padding: 0 6px; font-family: $f-poppins; font-weight: 500; font-size: 9px; text-transform: uppercase; color: #fff; background: #ca0a0a; line-height: 16px; letter-spacing: 0.13em; }
+.product .product__image .like { display: block; position: absolute; top: 15px; right: 13px; }
+.product .product__image .like i { font-size: 28px; color: #fff; }
+.product .product__image .product__details { position: absolute; bottom: 0; left: 0; width: 100%; padding: 0 20px 11px; background: linear-gradient(to bottom, transparent, rgba(1,1,1,.6)); pointer-events: none; }
+.product .product__image .product__details h3 { margin-bottom: 2px; color: #fff; font-weight: 600; line-height: 1; }
+.product .product__image .product__details p { font-size: 12px; font-weight: 600; color: #b7b7b7; }
+
+.product .product__content { flex-grow: 1; padding: 17px 20px 21px; border: 1px solid #eaeaea; }
+.product .product__content a { text-decoration: none; }
+.product .product__content > p { margin-bottom: 8px; font-size: 15px; font-weight: 700; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.product .product__content { padding: 10px; }
+	.product .product__details h3 { font-size: 22px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.product { flex: 0 0 50% !important; max-width: 50% !important; }
+}
+
+/* Mobile Portrait */
+
+$breakpoint-mobile-portrait {
+	.product { flex: 0 0 100% !important; max-width: 100% !important; }
+}
+

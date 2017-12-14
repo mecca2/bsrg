@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header .header__bar { padding: 10px 0; background-color: $c-dark-blue; color: #fff; }
+.header .header__bar .shell { display: flex; justify-content: space-between; align-items: center; }
+.header .header__bar .shell:after { display: none; }
+.header .header__contacts { font-size: 13px; }
+.header .header__contacts ul:after { @extend clearfix; }
+.header .header__contacts ul li { float: left; display: flex; }
+.header .header__contacts ul li + li { margin-left: 56px; }
+.header .header__contacts ul li i { margin-right: 12px; }
+.header .header__contacts ul li a { text-decoration: none; }
+.header .header__contacts ul li p { display: inline-block; font-weight: 600; }
+
+.header .header__inner { position: relative; padding: 6px 0; }
+.header .header__inner .shell { display: flex; justify-content: space-between; align-items: center; }
+.header .header__inner .shell:after { display: none; }
+
+body.home .header { position: absolute; z-index: 30; top: 0; left: 0; width: 100%; }
+body.home .header .header__inner .shell { justify-content: center; }
+body.home .header .logo { position: absolute; top: 70px; left: 50%; transform: translateX(-50%); }
+body.home.admin-bar .header { top: 32px; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	body.home.admin-bar .header { top: 46px; }
+	body.home .header .logo { top: 50px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.header .header__contacts ul li { float: none; }
+	.header .header__contacts ul li + li { margin-left: 0; }
+
+	.header .header__inner .shell { justify-content: center; padding: 0 !important; }
+	.header .header__inner .btn-menu { position: absolute; right: 10px; top: 10px; }
+	body.home.admin-bar .header { top: 46px; }
+}

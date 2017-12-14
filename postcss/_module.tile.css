@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	Tiles
+\* ------------------------------------------------------------ */
+
+.tiles { display: flex; flex-wrap: wrap; margin: -15px; }
+.tiles.owl-carousel { margin: 0; }
+.tiles--1of3 .tile { flex: 0 0 33.33%; max-width: 33.33%; }
+.tiles--1of4 .tile { flex: 0 0 25%; max-width: 25%; }
+
+/*  Tiles as slider  */
+.tiles--1of3.owl-carousel { display: block; margin-bottom: 270px; }
+.tiles--1of3.owl-carousel .tile { max-width: 100% !important; padding: 0; }
+.tiles--1of3.owl-carousel .tile__content a { text-decoration: none; font-size: 13px; }
+.tiles--1of3 .owl-nav { display: flex; justify-content: space-between; position: absolute; left: -50px; top: 90px; width: calc(100% + 100px); pointer-events: none; }
+.tiles--1of3 .owl-nav > * { pointer-events: all; }
+
+/* Small Desktop */
+
+$breakpoint-small-desktop {
+	.tiles--1of3.owl-carousel { padding: 0 40px; margin: 0 0 80px; }
+	.tiles--1of3.owl-carousel .owl-nav { left: 10px; width: calc(100% - 10px); }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.tiles--1of4 .tile { flex: 0 0 33.33%; max-width: 33.33%; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.tiles--1of3.owl-carousel { padding: 0; margin-bottom: 20px; }
+	.tiles--1of3.owl-carousel .owl-nav { display: none; }
+}
+
+/* ------------------------------------------------------------ *\
+	Tile
+\* ------------------------------------------------------------ */
+
+.tile { display: flex; flex-direction: column; padding: 15px; }
+.tile .tile__image { flex-shrink: 1; border: 1px solid #eaeaea; border-bottom: 0; }
+.tile .tile__image a { display: block; text-decoration: none; transition: opacity .3s; }
+.tile .tile__image img { display: block; width: 100%; height: auto; margin: 0 auto; }
+.tile .tile__content { flex-grow: 1; padding: 15px 19px; border: 1px solid #eaeaea; }
+.tile .tile__content h5 { margin-bottom: 5px; font-weight: 600; }
+.tile .tile__content h5 a { text-decoration: none; }
+.tile .tile__content i { margin-right: 7px; color: $c-light-blue; }
+.tile .tile__content p { margin-bottom: 5px; font-size: 12px; font-weight: 600; color: #a5a5a5; }
+.tile .tile__content > a { color: $c-light-blue; font-weight: 600; font-size: 15px; }
+
+/*  Tile Secondary  */
+.tile--secondary { position: relative; margin-bottom: 20px; }
+.tile--secondary .tile__image,
+.tile--secondary .tile__image a,
+.tile--secondary .tile__image img { height: 100%; }
+.tile--secondary .tile__content { position: absolute; bottom: 15px; left: 15px; width: calc(100% - 30px); padding: 17px 0 10px; background: color($c-light-blue a(85%)); text-align: center; color: #fff; border: none; pointer-events: none; }
+.tile--secondary .tile__content h3 { margin-bottom: 5px; font-size: 25px; line-height: 1; text-shadow: 1px 0 2px rgba(0,0,0,.35); }
+.tile--secondary .tile__content p { font-size: 12px; text-shadow: 1px 0 2px rgba(0,0,0,.35); color: #fff; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.tile { flex: 0 0 50% !important; max-width: 50% !important; }
+}
+
+/* Mobile Portrait */
+
+$breakpoint-mobile-portrait {
+	.tile { flex: 0 0 100% !important; max-width: 100% !important; }
+}
