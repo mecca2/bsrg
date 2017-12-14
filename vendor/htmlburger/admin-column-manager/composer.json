@@ -1,0 +1,18 @@
+{
+    "name": "htmlburger/admin-column-manager",
+    "description": "This plugin provides an easy way to add, remove and manage columns from WordPress administration screens for post, users and taxonomy listing.",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "htmlburger",
+            "email": "info@htmlburger.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "carbon-admin-columns-manager.php"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "htmlburger/carbon-common",
+    "description": "A collection of common utility functions, useful for building WordPress themes and plugins.",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "htmlburger",
+            "email": "info@htmlburger.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "carbon-common.php"
+        ]
+    }
+}
