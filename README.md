@@ -8,10 +8,6 @@ You can setup Header Contacts from "Theme Options > Header" and social links fro
 The footer displays Callout, that can be setup from "Theme Options > Sections > Callout",
 Widgetized area that can be updapted from "Appearance > Widgets > Widgetized Footer".
 
-## Theme Options
-
-From "Theme Options > Rets" you can setup your Rets credentials.
-From "Theme Options > Sidebars" you can associate sidebars with single post entries.
 
 ## Page Templates
 
