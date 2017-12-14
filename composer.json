@@ -1,0 +1,38 @@
+{
+	"type": "project",
+	"require": {
+		"htmlburger/carbon-pagination": "1.1.*",
+		"htmlburger/carbon-fields": "^2.0.0@dev",
+		"htmlburger/carbon-field-icon": "*",
+		"htmlburger/carbon-common": "^1.0",
+		"htmlburger/carbon-fragment": "1.0.*",
+		"htmlburger/theme-help": "1.1.*",
+		"htmlburger/admin-column-manager": "*",
+		"htmlburger/carbon-video": "*",
+		"tyxla/carbon-breadcrumbs": "*",
+		"troydavisson/phrets": "2.*"
+	},
+	"require-dev": {
+		"htmlburger/carbon-debug": "1.0.*",
+		"dekor/php-array-table" : "*@dev"
+	},
+	"config": {
+		"secure-http": false,
+		"github-oauth": {
+			"github.com": "60c91b6cd016dc2947926b9fe71a17210ee6ca16"
+		},
+		"platform": {
+			"php": "5.6"
+		}
+	},
+	"extra": {
+		"installer-paths": {
+			"vendor/{$vendor}/{$name}/": ["type:wordpress-plugin"]
+		}
+	},
+	"autoload" : {
+		"psr-4": {
+			"Crb\\": "includes/autoload"
+		}
+	}
+}

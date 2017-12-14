@@ -1,0 +1,245 @@
+/*
+Theme name: Bay Street Realty Group
+Description: Custom Theme
+*/
+
+/*
+	Source post-css styles are located in the postcss directory.
+	The compiled bundle is in assets/bundle.css; The README.md
+	file contains instructions how to get the compilation
+	process up & running.
+
+	If you need to make a quick fix, feel free to add CSS
+	below this comment. It will override bundle.css styles.
+*/
+
+p {  }
+
+.ajaxSearch { margin: 0px auto 24px auto; }
+
+body.home.show-nav-main .btn-menu span:after,body.home.show-nav-main .btn-menu span:before{background-color:#3e5164;}
+
+body.show-nav-main .btn-menu span:after,body.show-nav-main .btn-menu span:before{background-color:#3e5164;}
+
+.header .header__bar{background-color:#3e5164;}
+
+.intro--home{background-color:#3e5164;}
+
+.list-services .list__content{background-color:#3e5164;}
+
+.nav>ul>li>a:after{background:#3e5164;}
+
+body.home .nav>ul>li>ul{color:#3e5164;}
+
+body.home .post{background:#3e5164;}
+
+.paging .current a{background:#a7a9ac;}
+
+.accordion .accordion__section.active .accordion__head{background:#a7a9ac;}
+
+.btn{background:#a7a9ac;}
+
+body .gform_wrapper ul.gform_fields li.gfield input:focus{border-color:#a7a9ac;}
+
+body .gform_wrapper ul.gform_fields textarea:focus{border-color:#a7a9ac;}
+
+body .gform_wrapper .button{background:#a7a9ac;}
+
+.form-filter .form__btn{background:#a7a9ac;}
+
+.list-info i{color:#a7a9ac;}
+
+/*li:first-child a { color:#a7a9ac;}*/
+
+li.current a { color:#a7a9ac;}
+
+.nav-filter>ul>li.current a:after{background:#a7a9ac;}
+
+.nav-filter ul ul li a:hover { color:#a7a9ac; }
+
+html.no-touch [class^=btn]:hover{border-color:#a7a9ac;color:#a7a9ac}
+
+html.no-touch .profile .socials ul li a:hover,html.no-touch .widget.carbon_fields_menu_with_large_buttons a:hover{background:#a7a9ac;}
+
+html.no-touch .paging a:hover{background:#a7a9ac;}
+
+html.no-touch .nav-filter a:hover,html.no-touch .section-main .section__map .section__map-contacts a:hover{color:#a7a9ac;}
+
+html.no-touch body .gform_wrapper .button:hover{color:#a7a9ac;border-color:#a7a9ac}
+
+.profile .profile__head a{color:#a7a9ac;}
+
+.section-main .section__head:after{background:#a7a9ac;}
+
+.section-main .section__map .section__map-contacts i{color:#a7a9ac;}
+
+.gform_footer input{background:#a7a9ac;}
+
+.slider--testimonials .owl-dot.active{background-color:#a7a9ac;}
+
+.agent-business-card .widget__body a{color:#a7a9ac;}
+
+.tile .tile__content i{color:#a7a9ac;}
+
+.tile .tile__content>a{color:#a7a9ac;}
+
+.widget--contact ul li i{color:#a7a9ac;}
+
+.widget--contact .widget__body a{color:#a7a9ac;}
+
+.sidebar .widget--contact i{color:#a7a9ac;}
+
+body.home .header .header__inner .shell{background-color:#6b6b6b; max-width:100%; margin-top:-6px;padding-bottom:8px;padding-top:4px;}
+
+body .header .header__bar .shell .header__contacts li:first-child a, body .header .header__bar .shell .socials li:first-child a{color:#fff;}
+
+section.section-callout{background-color:#6b6b6b;}
+
+body .wrapper footer .footer__inner{background-color:#3e5164;}
+
+body .wrapper footer .footer__inner .shell ul.widgets-footer li{color:#a7a9ac;}
+
+body .wrapper footer .footer__bar{background-color:#a7a9ac;}
+
+body .wrapper footer .footer__bar .socials{color:#3e5164;}
+
+body .wrapper footer .footer__bar .shell .footer__copyright p{color:#3e5164;}
+
+/* ==========================================================================
+	# Footer
+========================================================================== */
+
+html.no-touch .socials ul li a:hover i { color: #fff; }
+.article-details { word-break: break-word; }
+.intro .intro__content h1 { margin-bottom: 80px; }
+
+
+/* ==========================================================================
+	# Mecca Production Custom
+========================================================================== */
+
+/* Property Detail - google map */
+.shell .google-map {
+	float: right;
+	height: 180px;
+}
+
+@media (max-width: 767px) {
+	.shell .google-map {
+		width: 100%;
+	}
+}
+
+
+/* Header Nav Dropdowns */
+.menu-main-menu-container.nav>ul>li>ul {
+	background-color: #0b2b5a;
+	width: 210px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.menu-main-menu-container.nav>ul>li>ul>li {
+	color: white;
+}
+
+/* Decreasing vertical space */
+.post--with-aside-video {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+/* Vertically centering callout with video or photo section text */
+.post--with-aside-video .post-left,
+.post--with-aside-video .post-right {
+	display:flex;
+	align-items:center;
+}
+
+/* Special styling for Development Page */
+.quote-title {
+	font-size: 42px;
+	font-weight: 800;
+}
+
+.quote-description {
+	font-size: 24px;
+	font-style: italic;
+}
+
+/* 
+Home page image slide show 
+*/ 
+.home-slider-container .owl-carousel {
+  position: relative;
+  height: 100%;
+}
+.home-slider-container .owl-carousel .owl-stage-outer,
+.home-slider-container .owl-carousel .owl-stage-outer div {
+  height: 100%;
+}
+.home-slider-container .owl-carousel .owl-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-slider-container .owl-carousel div.owl--text {
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  width: 20em;
+  height: 8em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.home-slider-container .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.home-slider-container .owl-carousel .owl-nav div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+}
+.home-slider-container .owl-carousel .owl-nav .owl-prev {
+  left: 5px;
+}
+.home-slider-container .owl-carousel .owl-nav .owl-next {
+  right: 5px;
+}
+.home-slider-container .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+.home-slider-container .owl-dots .owl-dot.active span {
+  background: #ffffff;
+}
+.home-slider-container .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.home-slider-container .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
