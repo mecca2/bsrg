@@ -126,7 +126,7 @@ register_post_type( 'crb_slideshow', array(
 		'not_found' =>  __( 'No slideshows found', 'crb' ),
 		'not_found_in_trash' => __( 'No slideshows found in trash', 'crb' ),
 	),
-	'public' => false,
+	'public' => true,
 	'exclude_from_search' => true,
 	'show_ui' => true,
 	'capability_type' => 'page',

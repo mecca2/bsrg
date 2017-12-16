@@ -130,6 +130,11 @@ html.no-touch .socials ul li a:hover i { color: #fff; }
 	}
 }
 
+/* Property Detail - List details */
+.article-details .list-details {
+  width: 100%;
+}
+
 
 /* Header Nav Dropdowns */
 .menu-main-menu-container.nav>ul>li>ul {
@@ -150,8 +155,7 @@ html.no-touch .socials ul li a:hover i { color: #fff; }
 }
 
 /* Vertically centering callout with video or photo section text */
-.post--with-aside-video .post-left,
-.post--with-aside-video .post-right {
+.post--with-aside-video .post-left {
 	display:flex;
 	align-items:center;
 }
@@ -166,6 +170,30 @@ html.no-touch .socials ul li a:hover i { color: #fff; }
 	font-size: 24px;
 	font-style: italic;
 }
+
+/* Homepage - Background Video */
+.section-callout-home .callout__video {
+  z-index: 1;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.section-callout-home .callout__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.section-callout-home .section__content {
+  z-index:3;
+  text-align:center;
+  min-width: 100%;
+  padding-top: 20%;
+}
+
 
 /* 
 Home page image slide show 
@@ -242,4 +270,95 @@ Home page image slide show
   display: inline-block;
   zoom: 1;
   *display: inline;
+}
+
+/* 
+Full width slider on single page 
+*/ 
+.slider--slideshow-full-width{
+  height:100%;
+}
+.slider--slideshow-full-width .owl-carousel {
+  position: relative;
+  height: 100%;
+}
+.slider--slideshow-full-width .owl-carousel div:not(.owl-controls) {
+  height: 100%;
+}
+.slider--slideshow-full-width .owl-carousel .owl-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider--slideshow-full-width .owl-carousel div.owl--text {
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  width: 20em;
+  height: 8em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.slider--slideshow-full-width .owl-carousel .owl-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.slider--slideshow-full-width .owl-carousel .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+  zoom: 1;
+  margin: 0;
+  width: 50px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  font-size: .9em;
+  border-radius: 3px;
+  color: #FFF;
+  background: #000;
+  opacity: .6;
+  text-transform: capitalize;
+}
+.slider--slideshow-full-width .owl-carousel .owl-controls .owl-buttons .owl-prev {
+  left: 5px;
+}
+.slider--slideshow-full-width .owl-carousel .owl-controls .owl-buttons .owl-next {
+  right: 5px;
+}
+.slider--slideshow-full-width .slider__slide-content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 200px !important;
+    padding: 30px;
+    background: #151515ba;
+    color: #fff;
+    border-right: solid #b8c9d6 2px;
+    border-top: solid #b8c9d6 2px;
+
+}
+.slider--slideshow-full-width .slider__slide-content h2{
+  margin-bottom: 10px;
+    line-height: 1;
+    font-size: 60px;
+}
+.slider--slideshow-full-width .slider__slide-content p, 
+.slider--slideshow-full-width .slider__slide-content li{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1;
+    opacity: .7; 
+    font-size:30px;
+}
+
+.slider--slideshow-full-width .owl-dots, 
+.slider--slideshow-full-width .owl-nav, 
+.slider--slideshow-full-width .list-details i{
+  display: none;
 }

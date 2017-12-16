@@ -66,8 +66,6 @@ Container::make( 'post_meta', __( 'Sections Settings', 'crb' ) )
 			========================================================================== */
 
 			->add_fields( 'content_with_video', __( 'Content With Video or Photo', 'crb' ), array(
-				Field::make( 'text', 'title', __( 'Title', 'crb' ) ),
-				Field::make( 'rich_text', 'content', __( 'Content', 'crb' ) ),
 				Field::make( 'select', 'type', __( 'Media Type', 'crb' ) )
 					->set_width( 10 )
 					->set_options( array(
@@ -97,6 +95,8 @@ Container::make( 'post_meta', __( 'Sections Settings', 'crb' ) )
 						'left'      => __( 'Left'      , 'crb' ),
 					) )
 					->help_text( __( 'This will orient the photo/video to the left or right of Title and Content above', 'crb' ) ),
+				Field::make( 'text', 'title', __( 'Title', 'crb' ) ),
+				Field::make( 'rich_text', 'content', __( 'Content', 'crb' ) ),
 			) )
 
 			/* ==========================================================================
@@ -263,10 +263,30 @@ Container::make( 'post_meta', __( 'Sections Settings', 'crb' ) )
 			========================================================================== */
 
 			->add_fields( 'callout', __( 'Callout', 'crb' ), array(
+				Field::make( 'select', 'type', __( 'Media Type', 'crb' ) )
+					->set_width( 10 )
+					->set_options( array(
+						'callout_image'      => __( 'Photo'      , 'crb' ),
+						'callout_video'      => __( 'Video'      , 'crb' ),
+					) ),
 				Field::make( 'image', 'background', __( 'Background', 'crb' ) )
-					->set_required( true )
 					->set_width( 35 )
-					->help_text( crb_get_attachment_help( 'crb_section_callout_background' ) ),
+					->help_text( crb_get_attachment_help( 'crb_section_callout_background' ) )
+					->set_conditional_logic( array(
+						array(
+							'field' => 'type',
+							'value' => 'callout_image',
+						)
+					) ),
+				Field::make( 'text', 'background_video', __( 'Background', 'crb' ) )
+					->set_width( 35 )
+					->help_text( __( 'You can use any YouTube or Vimeo video URL, for example: https://www.youtube.com/watch?v=OCWj5xgu5Ng or http://vimeo.com/87110435', 'crb' ) )
+					->set_conditional_logic( array(
+						array(
+							'field' => 'type',
+							'value' => 'callout_video',
+						)
+					) ),
 				Field::make( 'text', 'title', __( 'Title', 'crb' ) )
 					->set_width( 65 ),
 				Field::make( 'rich_text', 'content', __( 'Content', 'crb' ) ),
